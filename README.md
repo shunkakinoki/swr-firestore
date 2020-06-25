@@ -585,7 +585,7 @@ This is useful if you want to `update` a document in a component that isn't conn
 
 ## `add(path, data)`:
 
-Extends the Firestore document [`add` function](https://firebase.google.com/docs/firestore/manage-data/add-data).
+Extends the Firestore collection [`add` function](https://firebase.google.com/docs/firestore/manage-data/add-data).
 
 - It also updates the local cache using SWR's `mutate`. This will prove highly convenient over the regular `add` function.
 - Use this **instead** of `firebase.firestore().collection('users').add(data)`

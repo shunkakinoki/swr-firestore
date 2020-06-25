@@ -348,7 +348,7 @@ export const useCollection = <
   const { data, isValidating, revalidate, mutate, error } = swr
 
   /**
-   * `add(data)`: Extends the Firestore document [`add` function](https://firebase.google.com/docs/firestore/manage-data/add-data).
+   * `add(data)`: Extends the Firestore collection [`add` function](https://firebase.google.com/docs/firestore/manage-data/add-data).
    * - It also updates the local cache using SWR's `mutate`. This will prove highly convenient over the regular `add` function provided by Firestore.
    */
   const add = useCallback(
